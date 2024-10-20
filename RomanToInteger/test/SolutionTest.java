@@ -11,9 +11,10 @@ public class SolutionTest {
     @CsvSource({
             "3, III",
             "58, LVIII",
+            "44, XLIV",
             "1994, MCMXCIV"
     })
-    public void convertInput_III(int decimal, String romanNumber) {
+    public void convertInput(int decimal, String romanNumber) {
         assertEquals(decimal, solution.romanToInt(romanNumber));
     }
 

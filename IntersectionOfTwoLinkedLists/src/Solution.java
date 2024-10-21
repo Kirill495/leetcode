@@ -13,12 +13,12 @@ public class Solution {
             } else if (readNodes.contains(nodeB)) {
                 return nodeB;
             }
-            readNodes.add(nodeA);
-            readNodes.add(nodeB);
             if (nodeA != null) {
+                readNodes.add(nodeA);
                 nodeA = nodeA.next;
             }
             if (nodeB != null) {
+                readNodes.add(nodeB);
                 nodeB = nodeB.next;
             }
         }

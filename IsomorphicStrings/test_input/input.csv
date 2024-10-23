@@ -1,0 +1,7 @@
+s,t,result
+egg, add, true
+paper, title, true
+foo, bar, false
+badc, baba, false
+aa, ab, false
+bbbaaaba, aaabbbba, false

@@ -11,9 +11,6 @@ class SolutionTest {
     @CsvSource(value = {"abcccccdd, 7",
     "a, 1"})
     public void longestPalindromeTest(String str, int length) {
-//        for (char i = 'A'; i < 'z'; i++) {
-//            System.out.println(i + " : " + (int) i);
-//        }
         Solution s = new Solution();
         assertEquals(length, s.longestPalindrome(str));
 

@@ -11,4 +11,10 @@ public class MainTest {
         assertFalse(m.containsDuplicate(new int[]{1, 2, 3, 4}));
     }
 
+    @Test
+    void testHasDuplicate() {
+        Solution solution = new Solution();
+        assertTrue(solution.hasDuplicate(new int[]{1, 2, 3, 1}));
+        assertFalse(solution.hasDuplicate(new int[]{1, 2, 3, 4}));
+    }
 }

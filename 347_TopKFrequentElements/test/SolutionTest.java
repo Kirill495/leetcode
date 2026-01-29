@@ -7,7 +7,7 @@ import java.util.stream.Collectors;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class SolutionTest {
-    Solution1 s = new Solution1();
+    Solution2 s = new Solution2();
     @Test
     public void testSolution() {
 
@@ -37,6 +37,14 @@ class SolutionTest {
         int[] result = s.topKFrequent(new int[]{1,2}, 2);
         Set<Integer> set = Arrays.stream(result).boxed().collect(Collectors.toSet());
         assertTrue(set.contains(1));
+        assertTrue(set.contains(2));
+    }
+
+    @Test
+    public void testSolution4() {
+        int[] result = s.topKFrequent(new int[]{4,1,-1,2,-1,2,3}, 2);
+        Set<Integer> set = Arrays.stream(result).boxed().collect(Collectors.toSet());
+        assertTrue(set.contains(-1));
         assertTrue(set.contains(2));
     }
 }

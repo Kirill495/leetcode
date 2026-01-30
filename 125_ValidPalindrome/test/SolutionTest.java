@@ -7,7 +7,7 @@ import java.util.stream.Stream;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class SolutionTest {
-    Solution s = new Solution();
+    Solution1 s = new Solution1();
     @ParameterizedTest
     @MethodSource("testData")
     public void testCase1(boolean result, String testString) {
